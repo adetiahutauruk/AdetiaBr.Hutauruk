@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konversi & Aritmatika Bilangan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- KUPU-KUPU TERBANG -->
+  <div class="butterfly" style="top: 10%; animation-delay: 0s;"></div>
+  <div class="butterfly" style="top: 40%; animation-delay: 5s;"></div>
+  <div class="butterfly" style="top: 70%; animation-delay: 10s;"></div>
+
+  <div class="container">
+    <h2>Konversi & Aritmatika Bilangan</h2>
+
+    <div>
+      <label>Konversi Bilangan</label>
+      <input id="inputNumber" type="text" placeholder="Masukkan bilangan">
+      <select id="inputBase">
+        <option value="10">Desimal</option>
+        <option value="2">Biner</option>
+        <option value="8">Oktal</option>
+        <option value="16">Hexadesimal</option>
+      </select>
+      <button onclick="convertNumber()">Konversi</button>
+      <div class="result" id="conversionResult"></div>
+    </div>
+
+    <hr>
+
+    <div>
+      <label>Aritmatika Bilangan</label>
+      <input id="num1" type="text" placeholder="Bilangan 1">
+      <select id="base1">
+        <option value="10">Desimal</option>
+        <option value="2">Biner</option>
+        <option value="8">Oktal</option>
+        <option value="16">Hexadesimal</option>
+      </select>
+
+      <input id="num2" type="text" placeholder="Bilangan 2">
+      <select id="base2">
+        <option value="10">Desimal</option>
+        <option value="2">Biner</option>
+        <option value="8">Oktal</option>
+        <option value="16">Hexadesimal</option>
+      </select>
+
+      <select id="operation">
+        <option value="+">Tambah (+)</option>
+        <option value="-">Kurang (-)</option>
+        <option value="*">Kali (*)</option>
+        <option value="/">Bagi (/)</option>
+      </select>
+
+      <button onclick="calculate()">Hitung</button>
+      <div class="result" id="arithmeticResult"></div>
+    </div>
+  </div>
+
+  <script src="script (1).js"></script>
+</body>
+</html>
